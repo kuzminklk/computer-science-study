@@ -1,0 +1,32 @@
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    min-height: 100vh;
+    margin: 0px;
+    font-family: Nunito;
+    font-size: 32px;
+    font-weight: 350;
+    color: rgb(10, 10, 10)
+}
+
+div {
+    height: 100px;
+    width: 200px;
+    border-radius: 48px;
+    border: 4px dotted black;
+    box-shadow: 0 0 96px rgba(0, 0, 0, 0.18);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    transition: scale 0.5s ease, box-shadow 0.5s ease, filter 0.5s ease;
+    filter: blur(2px);
+}
+
+div:hover {
+    scale: 1.08;
+    box-shadow: 0 0 128px rgba(0, 0, 0, 0.11);
+    filter: none;
+}

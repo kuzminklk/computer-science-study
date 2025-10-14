@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Handling JS errors</title>
+</head>
+
+<body>
+    <script>
+        const height = '70';
+        function inchesToMeters(num) {
+            if (typeof num !== "number" || Number.isNaN(num)) {
+                throw new Error("A number was not provided. Please correct the input.");
+                return undefined;
+            }
+            const mVal = (num * 2.54) / 100;
+            const m2dp = mVal.toFixed(2);
+            return m2dp;
+        }
+        try {
+            console.log(inchesToMeters(height));
+        } catch (error) {
+            console.error(error);
+            console.log("Insert code to handle the error");
+        }
+    </script>
+</body>
+
+</html>

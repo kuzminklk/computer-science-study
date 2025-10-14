@@ -1,0 +1,59 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: white;
+  color: #333333;
+  font:
+    1em / 1.4 Helvetica Neue,
+    Helvetica,
+    Arial,
+    sans-serif;
+  padding: 1em;
+  margin: 0;
+  width: 500px;
+}
+
+/* Reset */
+
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  font-size: 100%;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+textarea {
+  overflow: auto;
+}
+
+/* Task-styles */
+
+li {
+  list-style: none;
+  margin: 0.5rem;
+}
+
+ul {
+  margin: 0.5rem;
+  padding: 0;
+}
+
+button {
+    padding: 0.25rem;
+    border-radius: 8px;
+    border: none;
+    color: white;
+    background-color: rgb(6, 83, 24);
+}
+
+input, select {
+    border-radius: 4px;
+    border: 1px  solid black;
+    padding: 0.125rem;
+}

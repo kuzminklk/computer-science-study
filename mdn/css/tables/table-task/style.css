@@ -1,0 +1,55 @@
+
+/* General */
+html {
+    font-family: Nunito, sans-serif;
+}
+
+table {
+    table-layout: fixed;
+    width: 80%;
+    min-width: 1000px;
+    margin: 0 auto;
+    border-collapse: collapes;
+    border-top: 2px solid #555555;
+    border-bottom: 2px solid #555555;
+}
+
+td,th {
+    padding: 0.5rem;
+    vertical-align: top;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: rgb(239, 239, 239);
+}
+
+caption {
+    padding: 1rem;
+    font-size: 1.25rem;
+}
+
+/* Alignment */
+tr :nth-child(2),
+tr :nth-child(3) {
+  text-align: right;
+  width: 15%;
+}
+
+tr :nth-child(1),
+tr :nth-child(4) {
+  text-align: left;
+  width: 35%;
+}
+
+tfoot tr :nth-child(1) {
+  text-align: right;
+}
+
+tfoot tr :nth-child(2) {
+  text-align: left;
+}
+
+/* Borders */
+tfoot {
+    border-top: 1px solid #555555;
+}
