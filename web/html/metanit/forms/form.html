@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <!-- <base href="/home"> Base for others links -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Adaptive design property -->
+    <meta charset="utf-8"> 
+</head>
+<body>
+    <form method="get" action="">
+        <p>
+        <label for="search">Search </label>
+        <input type="search" id="search" name="search" autocomplete="off" maxlength="12">
+        </p>
+        <br>
+        <p>
+        <input list="userlist" type="text" name="login" autocomplete="off" maxlength="12" required placeholder="Login">
+        </p>
+        <input type="password" name="password" autocomplete="off" maxlength="12" required placeholder="Password">
+        <p>
+        <input type="submit" value="Enter">
+        <button type="reset">Reset</button>
+        </p>
+        <datalist id="userlist">
+            <option value="Alex"></option>
+            <option value="Sam"></option>
+        </datalist>
+    </form>
+</body>
+</html>

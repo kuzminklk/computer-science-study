@@ -1,0 +1,185 @@
+body {
+    color: blue;
+}
+
+.class {
+    color: red;
+}
+
+#id {
+    color: blue;
+}
+
+body .childclass {
+    color: red;
+}
+
+body > .childclass { /* Only first child */
+    color: red;
+}
+
+h2 ~ p { /* All sibling paragraphs */
+    color: red;
+}
+
+
+
+/* ------------- PSEUDOCLASSES ------------- */
+
+a:link { /* Unvisited link */
+    color: saddlebrown;
+}
+
+a:visited { /* Visited link */
+    color: saddlebrown;
+}
+
+a:active { /* When press */
+    color: saddlebrown;
+}
+
+a:hover { /* When hover */
+    color: saddlebrown;
+}
+
+input:focus { /* When in focus */
+    color: saddlebrown;
+}
+
+body p:not(p.box) { /* Except */
+    color: red;
+}
+
+div:empty { /* Empty divs */
+    color: saddlebrown;
+}
+
+*:lang(ru) { /* All, when ru lang */
+    color: darksalmon;
+}
+
+body:first-child {
+    color: darksalmon;
+}
+
+body:last-child {
+    color: darksalmon;
+}
+
+body:only-child {
+    color: darksalmon;
+}
+
+body:only-of-type {
+    color: darksalmon;
+}
+
+a:nth-child(2n) { /* All odds childs */
+        color: darksalmon;
+}
+
+a:nth-last-child(2n) { /* Same from the end */
+        color: darksalmon;
+}
+
+a:nth-of-type(2n) { /* All odds childs of type */
+        color: darksalmon;
+}
+
+/* -- Form -- */
+
+input:disabled {
+        color: darksalmon;  
+}
+
+input:enabled {
+        color: darksalmon;  
+}
+
+
+input:checked {
+        color: darksalmon;  
+}
+
+input:default { /* ? */
+        color: darksalmon;  
+}
+
+
+input:valid { /* ? */
+        color: darksalmon;  
+}
+
+input:invalid { /* ? */
+        color: darksalmon;  
+}
+
+
+input:in-range { /* ? */
+        color: darksalmon;  
+}
+
+input:out-of-range { /* ? */
+        color: darksalmon;  
+}
+
+
+input:required { /* ? */
+        color: darksalmon;  
+}
+
+input:optional { /* ? */
+        color: darksalmon;  
+}
+
+:is(div, p) ~ article { /* Equal div ~ article, p ~ article */
+        color: darksalmon;  
+}
+
+:where(div, p) ~ article { /* Equal div ~ article, p ~ article, cascade score - 0 */
+        color: darksalmon;  
+}
+
+
+/* ------------- PSEUDOELEMENTS ------------ */
+
+p::first-letter {
+    color: red;
+}
+
+p::first-line {
+    color:brown;
+}
+
+a::before {
+    content: "Link: ";
+}
+
+a::after {
+    content: " <-- Link ";
+}
+
+::selection {
+    color: white;
+    background-color: black;
+}
+
+
+
+/* --------------- ATTRIBUTES -------------------- */
+
+input[type="text"] {
+    color: red;
+}
+
+a[href^="htpps"] { /* At the biginning */
+    color: red;
+}
+
+a[href$=".jpg"] { /* At the ending */
+    color: red;
+}
+
+a[href*="google"] { /* At the middle */
+    color: red;
+}

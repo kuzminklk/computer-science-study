@@ -1,0 +1,73 @@
+@font-face {
+  font-family: "Amstelvar VF";
+  src: url("https://mdn.github.io/shared-assets/fonts/variable-fonts/AmstelvarAlpha-VF.woff2")
+    format("woff2-variations");
+  font-weight: 300 900;
+  font-stretch: 75% 150%;
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+  font:
+    1.2em "Amstelvar VF",
+    Georgia,
+    serif;
+  margin: 20px;
+  padding: 0;
+}
+
+.container * {
+  margin: 0.5rem auto 1rem;
+  max-width: 42rem;
+}
+.container1 h1 {
+  font-optical-sizing: auto;
+  font-size: 5rem;
+  font-stretch: 85%;
+  font-weight: 450;
+}
+.container1 h2 {
+  font-optical-sizing: auto;
+  font-size: 2.25rem;
+  font-stretch: 90%;
+  font-weight: 575;
+}
+.container1 p {
+  font-optical-sizing: auto;
+  font-size: 1rem;
+  font-stretch: 100%;
+  font-weight: 375;
+}
+.demo2 {
+  --text-wght: 375;
+  --text-wdth: 100;
+  --text-opsz: 16;
+  --text-GRAD: 88;
+}
+.container2 > * {
+  font-size: 5rem;
+  font-variation-settings:
+    "wght" var(--text-wght),
+    "wdth" var(--text-wdth),
+    "opsz" var(--text-opsz),
+    "GRAD" var(--text-GRAD);
+}
+.container2 h1 {
+  --text-wght: 450;
+  --text-wdth: 85;
+  --text-opsz: 80;
+  font-size: 5rem;
+}
+.container2 h2 {
+  --text-wght: 575;
+  --text-wdth: 95;
+  --text-opsz: 36;
+  font-size: 2.25rem;
+}
+.container2 h2:hover {
+  --text-GRAD: 130;
+}
+.container2 p {
+  font-size: 1rem;
+}

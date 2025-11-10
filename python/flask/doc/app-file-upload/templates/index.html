@@ -1,0 +1,12 @@
+{% extends "layout.html" %}
+
+{% block head %} 
+<title>File upload</title>
+{% endblock %}
+
+{% block body %}
+<form action="/" method="POST" enctype="multipart/form-data">
+    <input type="file" name="file">
+    <input type="submit" value="Save a file">
+</form>
+{% endblock %}

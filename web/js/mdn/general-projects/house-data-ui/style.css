@@ -1,0 +1,45 @@
+body {
+  font: 1.1em / 1.5 system-ui;
+  width: clamp(480px, 90%, 1200px);
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 1.5em;
+}
+
+h2 {
+  font-size: 1.3em;
+}
+
+form div {
+  display: flex;
+  width: 100%;
+  max-width: 500px;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+label[for],
+select {
+  flex: 1;
+}
+
+#output {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  gap: 50px;
+}
+
+#output article {
+  padding: 0 20px;
+  background-color: #efefef;
+  border: 2px solid #cccccc;
+  border-radius: 10px;
+}
+
+#output ul {
+  list-style-type: none;
+  padding-left: 0;
+}

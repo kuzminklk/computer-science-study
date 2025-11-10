@@ -1,0 +1,42 @@
+::selection {
+    color: white;
+    background-color: black;
+}
+
+body {
+    letter-spacing: 1px;
+    word-spacing: 2px;
+}
+
+a:link, a:visited, a{
+    text-decoration: none;
+    color: rgb(155, 0, 0)
+}
+
+a:hover {
+    color: rgb(94, 10, 10)
+}
+
+
+/* Gradients
+body {
+    height: 100vh;
+    background-image: linear-gradient(30deg, rgba(38, 214, 100, 0.625), red);
+    overflow: hidden;
+}
+body {
+    background-image: radial-gradient(circle, white, black);
+    overflow: hidden;
+    height: 100vh;
+}
+*/
+
+
+/* Float, Outline, Shadow, BG
+.comments {
+    float: right;
+    outline: 2px dashed red;
+    box-shadow:1px 1px 1px 1px rgb(94, 10, 10);
+    background-color: aliceblue;
+}
+*/

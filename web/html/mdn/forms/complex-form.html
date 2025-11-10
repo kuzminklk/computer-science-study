@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Second form</title>
+  </head>
+  <body>
+    <form action="./payment_page" method="get">
+      <h2>Register for the meetup</h2>
+      <fieldset>
+        <legend>Choose hotel room type:</legend>
+        <div>
+          <input
+            type="radio"
+            id="hotelChoice1"
+            name="hotel"
+            value="economy"
+            checked />
+          <label for="hotelChoice1">Economy (+$0)</label>
+
+          <input type="radio" id="hotelChoice2" name="hotel" value="superior" />
+          <label for="hotelChoice2">Superior (+$50)</label>
+
+          <input
+            type="radio"
+            id="hotelChoice3"
+            name="hotel"
+            value="penthouse"
+            disabled />
+          <label for="hotelChoice3">Penthouse (+$150)</label>
+        </div>
+      </fieldset>
+      <fieldset> 
+        <legend>Choose classes to attend:</legend>
+        <div>
+          <input type="checkbox" id="yoga" name="yoga" />
+          <label for="yoga">Yoga (+$10)</label>
+
+          <input type="checkbox" id="coffee" name="coffee" />
+          <label for="coffee">Coffee roasting (+$20)</label>
+
+          <input type="checkbox" id="balloon" name="balloon" />
+          <label for="balloon">Balloon animal art (+$5)</label>
+        </div>
+      </fieldset>
+      <p>
+        <label for="transport">How are you getting here:</label>
+        <select name="transport" id="transport">
+          <option value="">--Please choose an option--</option>
+          <option value="plane">Plane</option>
+          <option value="bike">Bike</option>
+          <option value="walk">Walk</option>
+          <option value="bus">Bus</option>
+          <option value="train">Train</option>
+          <option value="jetPack">Jet pack</option>
+        </select>
+      </p>
+      <p>
+        <label for="comments">Any other comments:</label>
+        <textarea id="comments" name="comments" rows="5" cols="33"></textarea>
+      </p>
+      <p>
+        <button>Continue to payment</button>
+      </p>
+    </form>
+  </body>
+</html>

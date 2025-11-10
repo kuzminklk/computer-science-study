@@ -1,0 +1,22 @@
+git config --global user.name 'kuzminklk' (?)
+git config --global user.email '...' (?)
+
+git init project-1
+cd project-1 (?)
+git clone
+
+git add *
+
+git commit -m "Message"
+
+git push
+
+---
+
+git remote -v
+
+git remote set-url origin git@github.com:kuzminklk/ai-page.git
+
+---
+
+git rebase -i HEAD~N

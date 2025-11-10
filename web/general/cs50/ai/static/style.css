@@ -1,0 +1,97 @@
+/*
+<weight>: Use a value from 200 to 1000
+<uniquifier>: Use a unique and descriptive class name
+
+.nunito-<uniquifier> {
+  font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
+*/
+
+:root {
+    --ff: "Nunito", sans-serif;
+    --colorprimary: #FFFFFF;
+    --colorsecondary: #000000;
+    --coloraccent: #1D6ED7;
+    --h1: 61px/83px var(--ff);
+    --p: 16px/21px var(--ff);
+}
+
+@media (max-width: 800px) {
+  body {
+    flex-direction: column;
+  }
+}
+
+::selection {
+    color: white;
+    background-color: black;
+}
+
+body {
+    background: var(--colorprimary);
+    color: var(--colorsecondary);
+    font: var(--p);
+
+    display: flex;
+    gap: 200px;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+    width: 90%;
+    max-width: 1280px;
+    margin: 100px auto;
+
+}
+
+h1 {
+    font: var(--h1);
+}
+
+p {
+    font: var(--p);
+    letter-spacing: 1.28px;
+}
+
+a {
+    background: var(--coloraccent);
+    border-radius: 8px;
+    padding: 10px;
+    text-decoration: none;
+    margin-top: 20px;
+    margin-right: 40px;
+    display: inline-block;
+    box-sizing: border-box;
+    /* box-shadow: -2px 2px 12px #0000008f; */
+}
+
+a:nth-of-type(1) {
+    color: var(--colorprimary);
+}
+
+a:nth-of-type(2) {
+    border: 2px solid var(--coloraccent);
+    background: none;
+    color: var(--colorsecondary);
+    padding: 8px;
+}
+
+a:hover {
+    transition: scale, 0.3s;
+    scale: 1.05;
+}
+
+img {
+    border-radius: 16px;
+    width: 100%;
+    min-width: 256px;
+    /* box-shadow: 4px 4px 48px gray; */
+}
+
+div {
+    flex: 1;
+}

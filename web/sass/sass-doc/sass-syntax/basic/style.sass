@@ -1,0 +1,66 @@
+@use "_forms"
+
+$font-stack: monospace
+$sub-font-stack: "Tiny5"
+$primary-color: #000000
+$sub-primary-color: #353535
+$secondary-color: #ffffffff
+$accent-color: #d81600
+$sub-accent-color: #b02414
+
+@mixin flex($flex-dir: row)
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-direction: $flex-dir
+
+
+
+html
+    color: $primary-color
+    font: calc(2vw + 16px) $font-stack
+
+body
+    @include flex($flex-dir: column)
+    margin: 0 1rem
+    background: linear-gradient(180deg, rgba(255, 255, 250, 1.000) 0.000%, rgba(255, 255, 250, 1.000) 7.692%, rgba(255, 255, 240, 1.000) 7.692%, rgba(255, 255, 240, 1.000) 15.385%, rgba(255, 245, 230, 1.000) 15.385%, rgba(255, 245, 230, 1.000) 23.077%, rgba(251, 235, 220, 1.000) 23.077%, rgba(251, 235, 220, 1.000) 30.769%, rgba(245, 225, 211, 1.000) 30.769%, rgba(245, 225, 211, 1.000) 38.462%, rgba(238, 215, 202, 1.000) 38.462%, rgba(238, 215, 202, 1.000) 46.154%, rgba(232, 206, 194, 1.000) 46.154%, rgba(232, 206, 194, 1.000) 53.846%, rgba(226, 198, 186, 1.000) 53.846%, rgba(226, 198, 186, 1.000) 61.538%, rgba(220, 189, 179, 1.000) 61.538%, rgba(220, 189, 179, 1.000) 69.231%, rgba(214, 181, 172, 1.000) 69.231%, rgba(214, 181, 172, 1.000) 76.923%, rgba(208, 174, 166, 1.000) 76.923%, rgba(208, 174, 166, 1.000) 84.615%, rgba(202, 168, 162, 1.000) 84.615%, rgba(202, 168, 162, 1.000) 92.308%, rgba(197, 162, 157, 1.000) 92.308% 100.000%)
+
+nav
+    @include flex
+    justify-content: space-evenly
+    gap: 0.6rem
+    height: 2.6rem
+    width: 100%
+    border-bottom: 0.14rem dashed $sub-accent-color
+    font-size: 0.9rem
+
+    a
+        font-family: $sub-font-stack
+        text-decoration: none
+        color: $sub-accent-color
+        transition: scale 0.2s ease, font-weight 0s ease
+
+    a:hover
+        scale: 1.06
+        font-weight: 600
+
+.sass-intro
+    margin: 1.2rem 0 4rem 0
+    text-align: center
+
+    h1
+        font-size: 2rem
+        font-weight: 600
+        color: $accent-color
+        font-family: $sub-font-stack
+
+.sass-description
+    @include flex($flex-dir: column)
+    margin-bottom:4rem
+    h2
+        font-size: 1.4rem
+        color: $sub-accent-color
+        font-family: $sub-font-stack
+        margin: 1.8rem 0 0.3rem 0
+    p
+        font-size: 0.8rem
