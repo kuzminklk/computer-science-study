@@ -1,3 +1,7 @@
+
+// Log events in logs
+
+
 import {format} from 'date-fns';
 import {v4 as uuid} from 'uuid';
 import fs from 'fs';
@@ -6,7 +10,7 @@ import path from 'path';
 async function logEvent(message, logName) {
     const dateTime = format(new Date(), 'yyyy.MM.dd\tHH:mm:ss');
     const logItem = `${dateTime}\t${uuid()}\t${message}\n`;
-    const logDirPath = path.join(import.meta.dirname, '..', '..', 'test', 'logs');
+    const logDirPath = path.join(import.meta.dirname, '..', 'logs');
 
     try {
         if (!fs.existsSync(logDirPath)) {

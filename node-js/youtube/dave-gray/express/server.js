@@ -1,43 +1,50 @@
 
+// Main server programm, use Express as foundation
+
+
 import path from 'path';
 import express from 'express';
 import cors from 'cors';
+
 import { logger } from './middleware/logEvent.js';
-import { errorHandler } from './middleware/errorHandler.js';
-import subdirRouter from './routes/subdir.js';
+import errorHandler from './middleware/errorHandler.js';
+
 import rootRouter from './routes/root.js';
 import apiEmployeesRouter from './routes/api/employees.js';
+import registerRouter from './routes/register.js';
+import authRouter from './routes/auth.js';
+import refreshRouter from './routes/refresh.js'
+
+import corsOptions from './config/corsOptions.js';
+
+import verifyJWT from './middleware/verifyJWT.js';
+
+import cookieParser from 'cookie-parser';
+
 
 const PORT = process.env.port || 3500;
-const VIEWSPATH = path.join(import.meta.dirname, '..', 'views');
+const VIEWSPATH = path.join(import.meta.dirname, 'views');
+
 
 const app = express();
 
-// Logger
 app.use(logger)
 
-// Cross Origin Resource Sharing – CORS
-const whitelist = ['https://kuzminklk.dev', 'http://127.0.0.1:3500'];
-const corsOptions = {
-    origin: (origin, callback) => {
-        if (whitelist.indexOf(origin) === -1 && origin /* Only for dev. version */) {
-            callback(new Error('Not allowed by CORS'));
-        } else {
-            callback(null, true);
-        }
-    },
-    optionsSuccessStatus: 200
-}
 app.use(cors(corsOptions));
 
-// Middleware: JSON, URL-data, static
-app.use(express.static(path.join(VIEWSPATH, 'static')));
+// Middleware
+app.use(express.static(path.join(import.meta.dirname, 'public')));
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
+app.use(cookieParser());
 
-// Routers
+// Routers. After 'verifyJWT' are protected — like an waterfall
 app.use('/', rootRouter);
-app.use('/subdir', subdirRouter);
+app.use('/register', registerRouter);
+app.use('/auth', authRouter);
+app.use('/refresh', refreshRouter);
+
+app.use(verifyJWT)
 app.use('/employees', apiEmployeesRouter);
 
 // Not found page

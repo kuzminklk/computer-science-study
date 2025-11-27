@@ -1,0 +1,28 @@
+2025.11.14	20:44:57	f8b73f79-6cf0-4438-97bd-9dc80a11ebe3	Error: Not allowed by CORS
+
+2025.11.15	14:15:02	fae2f75b-2b95-4a45-af7e-20bf32a4b786	ReferenceError: VIEWSPATH is not defined
+
+2025.11.15	14:15:20	03241592-c7e8-4221-9eb2-9b1c979f45f7	Error: ENOENT: no such file or directory, stat '/workspaces/study/node-js/youtube/dave-gray/express-js/routes/views/index.html'
+
+2025.11.15	14:15:45	4987db7a-b87e-4a02-9b49-98817b69758b	ReferenceError: VIEWSPATH is not defined
+
+2025.11.15	14:17:38	9d2047b6-ffe4-406b-82a5-5f191b34af63	ReferenceError: VIEWSPATH is not defined
+
+2025.11.15	14:17:53	331f2382-0f12-45a9-baba-f424b72ff15b	ReferenceError: VIEWSPATH is not defined
+
+2025.11.16	13:28:36	3de72d6c-4d0c-49c6-ad00-8afbff555e30	TypeError: Cannot read properties of undefined (reading 'firstname')
+
+2025.11.16	16:04:31	060886c2-2b37-403f-a454-542f7d458269	TypeError: Cannot set properties of undefined (setting 'employees')
+
+2025.11.17	18:35:12	eaac4074-c561-46d2-a73d-a747dd6078d8	TypeError: Cannot read properties of undefined (reading 'firstname')
+
+2025.11.17	18:39:39	b6988225-436f-4a3f-8758-6f08e8264a7f	TypeError: usersDB.find is not a function
+
+2025.11.18	13:33:42	21a6ca77-c109-4da6-9040-30422ba29dd0	ReferenceError: match is not defined
+
+2025.11.27	12:52:35	c988466d-e244-4474-a805-f99bcb52755e	ReferenceError: userMatch is not defined
+
+2025.11.27	12:53:06	df142db0-7f4d-4868-9771-44771ba702d9	ReferenceError: userMatch is not defined
+
+2025.11.27	12:53:29	df9121e0-8967-4e2d-9349-6fd186c19097	ReferenceError: userMatch is not defined
+
