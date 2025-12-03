@@ -1,0 +1,94 @@
+/* Type and text */
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  height: inherit;
+  font: 1.2em / 1.5 system-ui;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: calc(2vw + 2rem);
+}
+
+h2 {
+  font-size: calc(1vw + 1.5rem);
+}
+
+a {
+  color: red;
+}
+
+a:hover,
+a:focus {
+  text-decoration: none;
+}
+
+
+/* Styling the pane */
+
+.pane {
+    height: 100%;
+    width: clamp(480px, 60%, 1000px);
+    margin: 0 auto;
+    padding: 0 20px;
+    background: linear-gradient(to bottom, #9fb4c7, #7f7caf)
+}
+
+h1,
+.controls {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+}
+
+h1::before {
+    content: "📖";
+    margin-right: 20px;
+}
+
+.content {
+    overflow: auto;
+    padding: 0 20px;
+    border:  #28587b 2px solid;
+    background: url("https://mdn.github.io/shared-assets/images/examples/big-star.png")
+    no-repeat top 10px right 20px #eeeeff;
+    height: calc(100% - 200px);
+    border-radius: 8px; 
+}
+
+.controls {
+  justify-content: space-around;
+  gap: 20px;
+  padding: 20px;
+}
+
+button {
+  flex: 1;
+  font-size: 1.2rem;
+  height: 100%;
+  color: white;
+  background-color: rgb(40 88 123 / 0.8);
+  transition: background-color 0.4s ease;
+  border-radius: 8px;
+}
+
+button:hover {
+    background-color: rgb(40 88 123 / 0.4);
+}
+
+img {
+    max-width: 90%;
+    margin: 0 auto;
+    border: solid 1px #28587b;
+    display: block;
+}

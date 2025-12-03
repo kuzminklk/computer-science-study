@@ -1,0 +1,73 @@
+
+:root {
+    --main-color: #04160E;
+    --main-color-light: #105637;
+}
+
+body {
+    font-family: "Nunito", "Roboto", sans-serif;
+}
+
+::selection {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.514);
+}
+
+.done {
+    text-decoration: line-through;
+    color: #C4B491;
+}
+
+body {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+
+img {
+    max-width: 1000px;
+    border-radius: 16px;
+}
+
+
+h1 {
+    margin: 60px;
+}
+
+p {
+    margin: 40px;
+    letter-spacing: 1px;
+}
+
+li {
+    letter-spacing: 1px;
+}
+
+body div {
+    align-self: flex-start;
+    margin: 40px;
+    margin-top: 0px;
+}
+
+h2 {
+    margin: 20px;
+    margin-top: 0px;
+}
+
+h1, h2 {
+    color:  var(--main-color);
+    letter-spacing: 2px;
+}
+
+
+a {
+    color: var(--main-color);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--main-color-light);
+    transition: scale, 0.3s;
+    scale: 1.05;
+}

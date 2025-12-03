@@ -1,0 +1,14 @@
+[
+    {
+        "username": "Daniil",
+        "password": "$2b$10$BR0X9.zKO30TMkMgmH6.5.ZfFgAV.ZMAqgXlZ4SLIgW3NFc/fbHGy",
+        "roles": { "admin": 0, "editor": 1, "user": 2 },
+        "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkRhbmlpbCIsImlhdCI6MTc2NDQzMDYyNiwiZXhwIjoxNzY0NTE3MDI2fQ.wGUX_G0OBL-AxZTrXXArudXA8neMKGKmyhC4yy01vno"
+    },
+    {
+        "username": "Noa",
+        "password": "$2b$10$KsSHLaws82944J/uKoutH.f/yEz8e3fkXVjCcbnM2fKrxZfwCNdAu",
+        "roles": { "user": 2 },
+        "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Ik5vYSIsImlhdCI6MTc2NDQzMTA2OSwiZXhwIjoxNzY0NTE3NDY5fQ.KgUADNuLKeTg_mehm5SVyeUIW5b_rylP45g5Ow3kHRk"
+    }
+]

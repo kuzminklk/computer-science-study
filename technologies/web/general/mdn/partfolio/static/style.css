@@ -1,0 +1,47 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-flow: column;
+  margin: 0px;
+}
+
+section {
+  max-width: 100vw;
+  max-height: 2048px;
+}
+
+section p {
+  display: block;
+  position: absolute;
+  color: white;
+  max-width: 1032px;
+  max-height: 400px;
+  font-family: Nunito;
+  font-size: 61px;
+  font-weight: 200;
+  margin: 200px;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+a {
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  transition: scale, 0.3s;
+  scale: 1.05;
+}
+
+::selection {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.514);
+}

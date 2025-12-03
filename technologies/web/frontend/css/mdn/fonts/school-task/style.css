@@ -1,0 +1,124 @@
+/* General setup */
+
+@font-face {
+  font-family: "Amstelvar";
+  src: url("Amstelvar.ttf") format("ttf-variations");
+  font-weight: 300 900;
+  font-stretch: 75% 150%;
+  font-style: normal;
+  font-display: swap;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Amstelvar", Georgia, sans;
+  font-size: cal(8px + 1vw);
+}
+
+body {
+  margin: 0 auto;
+  min-width: 1000px;
+  max-width: 1400px;
+}
+
+/* Layout */
+
+section {
+  float: left;
+  width: 50%;
+}
+
+aside {
+  float: left;
+  width: 30%;
+}
+
+nav {
+  float: left;
+  width: 20%;
+}
+
+footer {
+  clear: both;
+}
+
+header, section, aside, nav, footer {
+  padding: 20px;
+}
+
+/* header and footer */
+
+header, footer {
+  border-top: 5px solid rgb(0, 0, 0);
+  border-bottom: 5px solid rgb(0, 0, 0);
+}
+
+/* WRITE YOUR CODE BELOW HERE */
+
+h1 {
+  font-size: 3rem;
+  font-stretch: 80%;
+	font-weight: 550;
+  text-align: center;
+}
+
+h2 {
+  font-size: 2rem;
+  font-stretch: 90%;
+	font-weight: 650;
+}
+
+h3 {
+  font-size: 1rem;
+  font-stretch: 95%;
+	font-weight: 550;
+}
+
+h2 + p {
+  text-indent: 1rem;
+}
+
+a {
+  text-decoration: none;
+  color: #AD2E24;
+  transition: all 0.2s ease;
+}
+
+a:hover, a:focus {
+  color: #540804;
+  text-decoration: underline;
+}
+
+a[href^="http"]::after {
+  background-image: url("link.png");
+  content: "";
+  display: inline-block;
+  width: 0.8rem;
+  height: 0.8rem;
+  background-size: 100%;
+  margin: 0 0.4rem;
+}
+
+nav li {
+  list-style: none;
+}
+
+nav a {
+  text-align: center;
+  display: block;
+  width: 8rem;
+  height: 4rem;
+  background-color: #AD2E24;
+  color: white;
+  line-height: 4rem;
+  font-size: 1.25rem;
+  margin: 0.2rem 0;
+  border-radius: 4px;
+}
+
+nav a:hover {
+  color: white;
+}

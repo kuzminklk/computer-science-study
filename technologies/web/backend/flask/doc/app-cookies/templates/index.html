@@ -1,0 +1,14 @@
+{% extends "layout.html" %}
+
+{% block head %} 
+<title>Cookies</title>
+{% endblock %}
+
+{% block body %}
+<h1>Hello {{ username }} </h1>
+
+<form action="/" method="post">
+    <input type="text" name="username">
+    <button type="submit">Submit a username!</button>
+</form>
+{% endblock %}

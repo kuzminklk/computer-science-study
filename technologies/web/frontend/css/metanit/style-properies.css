@@ -1,0 +1,301 @@
+
+
+/* Colors */
+
+body {
+    color: #234dc3;
+    border-color: rgb(123,2,12);
+    background-color: rgb(100%,100%,100%);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 20px;
+}
+
+a {
+    color: hsl(150, 50%, 50%, 0.6);
+    font-size: 2em; /* Equal 200% */
+}
+
+footer {
+    opacity: 0.3;
+}
+
+
+/* Text, font */
+
+@font-face {
+    font-family: Verdana;
+    src:url("verdana.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+header {
+    text-transform: uppercase;
+}
+
+h2 {
+    text-shadow: 0px 0px 10px rgb(204, 70, 70)
+}
+
+p {
+    line-height: 180%;
+}
+
+body {
+    text-align: justify;
+    text-indent: 32px;
+}
+
+
+/* Lists */
+
+ul {
+    list-style: disc;
+    list-style-position: outside;
+}
+
+
+/* Tables */
+
+table {
+    border-collapse: separate;
+    border-spacing: 12px;
+    empty-cells: hide;
+    caption-side: bottom;
+    table-layout: fixed;
+    width: 33%;
+    vertical-align: bottom;
+}
+
+
+/* Box model */
+
+div {
+    margin: 20px;
+    margin-left: 30px;
+    margin-top: 1px;
+
+    padding: 10px;
+
+    border: 2px, solid, rebeccapurple;
+    border-radius: 8px;
+}
+
+div.container {
+    width: 33%;
+    max-width: 300px;
+    min-width: 100px;
+
+    box-sizing: border-box;
+}
+
+
+/* Background */
+
+body {
+    background-color: #234dc3;
+}
+
+nav {
+    background-image: url("assda.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%, 100%;
+    background-position: top right;
+    background-attachment: local;
+    background-origin: border-box;
+    background-clip: border-box;
+    /* Shortcut background: #eee no-repeat border-box local url(cats.jpg); */
+}
+
+div {
+    box-shadow: 2px 2px 2px black;
+}
+
+a {
+    outline: red, dashed, 2px;
+}
+
+
+/* Float & overflow */
+
+div.container {
+    float:right;
+}
+
+footer {
+    clear: both;
+}
+
+.content {
+    overflow: hidden;
+}
+
+
+/* Gradients */
+
+body {
+    background-image: linear-gradient(30deg, rgba(38, 214, 100, 0.625), red);
+}
+
+body {
+    background-image: radial-gradient(circle, white, black);
+}
+
+
+/* <details> style */
+
+details[open] > summary {
+    color:#eee; 
+    background-color:#333;
+}
+
+
+/* Position */
+
+div {
+    float: right;
+}
+
+div {
+    display: none;
+}
+
+main {
+    position: fixed;
+    position: absolute;
+    z-index: 100;
+}
+
+
+/* Transoform CSS3 */
+
+div {
+    transform: rotate(90deg);
+    transform: scale(2);
+    transform: translate(12px,12px);
+    transform: skew(30deg);
+
+    transform: rotate(90deg) scale(2) translate(12px,12px) skew(30deg);
+    transform-origin: center;
+}
+
+
+/* Transition CSS3 */
+
+a {
+    background-color: red;
+    transition-property: background-color;
+    transition-duration: 2s;
+    transition-timing-function: ease;
+    transition-delay: 50ms;
+
+    transition: background-color 2s ease;
+}
+
+a:hover {
+    background-color: blue;
+}
+
+
+/* Animation */
+
+@keyframes coloranimation {
+    from {
+        color: red;
+    }
+    50% {
+        color: brown;
+    }
+    to {
+        color: blue;
+    }
+}
+
+header {
+    animation-name: coloranimation;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
+    animation-timing-function: ease;
+}
+
+
+/* Import and Media */
+
+@import url(colors.css);
+
+@media (max-device-width: 600px) {
+    body{
+        color: red;
+     } 
+}
+
+
+
+/* Flexboxes */
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-flow: row wrap;
+    justify-content: space-around; /* Main line */
+    align-items: stretch; /* Extra line */
+    align-content: space-around; /* Additional elements align */
+}
+
+.flex-item-1 {
+    order: 1;
+    align-self: center;
+    flex-basis: auto;
+    flex-shrink: 1;
+    flex-grow: 1;
+    flex: auto;
+}
+
+.flex-item-2 {
+    order: 2;
+    flex-basis: 100px;
+    flex-shrink: 2;
+    flex-grow: 2;
+}
+
+
+/* Grid */
+
+body {
+    display: grid;
+    grid: repeat(4, auto) / repeat(2, 100px);
+    gap: 10px;
+    grid-auto-flow: column;
+}
+
+.special-item {
+    grid-area: 1 / 1 / span 2 / span 2;
+    order: 3;
+}
+
+
+/* Grid names */
+body {
+    grid-template-columns: [col1s] 1fr [col1e] 100px;
+}
+
+.item {
+    grid-column: col1s / col1e;
+}
+
+
+/* Variables */
+
+:root {
+    --maincolor: #ff4757;
+}
+
+body {
+    background-color: var(--maincolor)
+}
